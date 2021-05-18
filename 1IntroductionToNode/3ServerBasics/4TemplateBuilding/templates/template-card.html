@@ -1,0 +1,27 @@
+<figure class="card">
+      <!-- SAME make the palceholder here -->
+          <div class="card__emoji">{%IMAGE%}{%IMAGE%}</div>
+
+          <div class="card__title-box">
+            <h2 class="card__title">{%PRODUCT_NAME%}</h2>
+          </div>
+          <div class="card__title-box">
+            <h2 class="card__title">{%ORGANIC%}</h2>
+          </div>
+
+          <div class="card__details">
+            <div class="card__detail-box {%NOT_ORGANIC%}">
+                <h6 class="card__detail">{%QUANTITY%}</h6>
+            </div>
+
+            
+
+            <div class="card__detail-box">
+              <h6 class="card__detail card__detail--price">{%PRICE%}</h6>
+            </div>
+          </div>
+<!-- Let us make a link which shows / product?id=0,1,2,3 so on  -->
+          <a class="card__link" href="/product?id={%ID%}">
+            <span>Detail <i class="emoji-right">----></i></span>
+          </a>
+        </figure>

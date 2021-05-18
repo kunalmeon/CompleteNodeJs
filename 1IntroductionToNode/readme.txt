@@ -1,0 +1,1 @@
+This is all about the basics of nodejs, basics comes first. So let's do it.

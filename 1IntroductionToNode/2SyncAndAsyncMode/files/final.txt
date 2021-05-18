@@ -1,0 +1,6 @@
+WE are reading two files. The result from first file will lead us to the next file to read.
+
+The idea is readperson.txt contains kunal as text. And we have kunal.txt file. 
+
+Callback inside callback can lead us to confusion. To avoid that we have async awiat
+technique.
