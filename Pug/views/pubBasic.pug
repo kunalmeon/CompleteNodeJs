@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title natours
+        //The attributes are given inside the parenthesis 
+        link(rel="stylesheet", href="css/style.css")
+    body
+        h1 Welcome to pug
+        p Pug is very easy to use
+
+        //-  We can also pass the variable into pug at the time of rendering it
+            from the app.js file as an object and we can directly access them 
+            just like noraml javascript 
+
+        h5=pugVariable1
+
+
+        //Two types of code one is buffered i.e it will be shown in the output
+        // Another is unbufferd which is not be shown in output but it makes sense
+        //unbuffered starts with '-' sign e.g -const name="karan"
+        -const age=23
+        h3 The age is #{age}
+        
+        //- Javascript can be used using "=" sign and the ES6 ${}
+            is replaced with #{} 
+        
+        

@@ -1,0 +1,38 @@
+{
+  "name": "errorhandling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.2.6",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.12.12",
+    "morgan": "^1.10.0",
+    "ndb": "^1.1.5",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1",
+    
+  },
+  {"type": "module" },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "pug": "^3.0.2",
+    "slugify": "^1.6.0"
+  }
+ 
+}

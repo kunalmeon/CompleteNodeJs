@@ -1,0 +1,67 @@
+//- doctype html
+//- html
+//-     head
+//-         meta(charset='UTF-8')
+//-         link(rel="stylesheet", href="css/style.css")
+//-         title Notours| exciting tour for advanturous people
+//-     body
+//-         h1 welcome to base template
+//-         //Header
+//-         header.header
+//-         nav.tours
+//-             a.nav__el(href="#") All Tours
+//-         .header__logo
+//-             img.logo(src="img/logo.png", alt="Natours Logo")
+//-         nav.users
+//-             //- a.nav(href='#') My Bookings
+//-             //- a.nav(href="#")
+//-             //-     img.userImage(src="img/userImage.png", alt="")
+//-             button.logIn Log In
+//-             button.singUp Sign Up
+//-         //Section
+//-         section.overview
+//-             h1 Tour
+
+//-         //Footer
+//-         footer.footer
+//-             img(src="img/footer.png", alt="")
+//-             ul.listItems          
+//-                 li: a(href="#") About Us
+//-                 li: a(href="#") Download apps
+//-                 li: a(href="#") Become a guide
+//-                 li: a(href="#") Careers
+//-                 li: a(href="#") Contact  
+            
+                    
+                        
+//-             p &copy; Kunal
+    
+    //- we can refactor this base template such that header content and footer can be placed 
+        separately. After that we can include them inside our base template file.
+
+doctype html
+html 
+        head
+        meta(charset='UTF-8')
+        link(rel="stylesheet", href="css/style.css")
+        title Notours|#{title}
+
+        body
+            //Header        
+            include _header
+
+            //Content
+            //- The content can be anything so we will dynamically extend this
+                template which is opposite of include. Only the block content 
+                from parent(base template )  can be accessed in the child.         
+            block content
+                h1 This is a placeholder which will be replaced as parents extends
+            //Footer
+            include _footer
+
+            //- including javascript file
+          
+            
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js")
+            
+            script(src="/js/Login.js")
